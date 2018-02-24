@@ -420,11 +420,6 @@ Navigation
 }
 
 
-
-/* ===========================
---- Intro
-============================ */
-
 .intro {
 	width:100%;
 	position:relative;
@@ -441,7 +436,11 @@ Navigation
 	padding:140px 0 60px;
 }
 
-
+.list-group-item:hover {
+	background-color: #28c3ab;
+	opacity: .5;
+	color: white;
+}
 
 
 /* ---- lead form --- */
