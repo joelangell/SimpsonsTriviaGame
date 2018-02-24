@@ -166,7 +166,6 @@ $(document).ready(function () {
 
 
     $(".list-group-item-success").on("click", function () {
-        $(this).off('click')
         $("#answerBox").show()
         stopTimer = true
         if (($(this).text()) === questions[answered][5]) {
@@ -178,7 +177,6 @@ $(document).ready(function () {
             var newQuestion = setTimeout(function () {
                 answered++
                 emptyQuestion()
-                $(this).off('click')
             }, 7000)
         }
         else if (($(this).text()) !== questions[answered][5]) {
@@ -190,7 +188,6 @@ $(document).ready(function () {
             var newQuestion = setTimeout(function () {
                 answered++
                 emptyQuestion()
-                $(this).off('click')
             }, 7000)
         }
 
